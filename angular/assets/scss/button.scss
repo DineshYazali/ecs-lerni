@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+button {
+  &:hover,&:focus {
+    outline: none !important;
+  }
+}
+
+.btn-clr-primary {
+  background: $primary;
+  color: $white !important;
+  padding: 0 16px;
+  line-height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.clr-primary {
+  color: $primary !important;
+}
+

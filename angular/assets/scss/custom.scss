@@ -1,0 +1,171 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+    margin: 0 !important;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 300 !important;
+    width: 100%;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 350px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+// margin css
+.padding0{
+    padding: 0px !important;
+}
+
+.margin0{
+    margin: 0px !important;
+}
+.m-2 {
+    margin: 2px !important;
+}
+
+.m-5 {
+    margin: 5px !important;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.m-30 {
+    margin: 30px;
+}
+
+.m-50 {
+    margin: 50px;
+}
+
+.m-l-5 {
+    margin-left: 5px;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+.m-l-30 {
+    margin-left: 30px;
+}
+.m-l-40 {
+    margin-left: 40px;
+}
+.m-l-50 {
+    margin-left: 50px;
+}
+
+.m-r-10 {
+    margin-right: 10px;
+}
+
+.m-r-20 {
+    margin-right: 20px;
+}
+
+.m-t-2{
+    margin-top: 2px;
+}
+
+.m-t-10{
+    margin-top: 10px;
+}
+
+.m-tb-10{
+    margin: 10px 0px;
+}
+
+.m-tb-30 {
+    margin: 30px 0px;
+}
+
+//padding css
+
+.p-5 {
+    padding: 5px !important;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+.p-40{
+    padding: 40px;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.p-l-20{
+    padding-left: 20px;
+}
+.p-t-10{
+    padding-top: 10px;
+}
+.p-t-15{
+    padding-top: 15px;
+}
+.p-t-20{
+    padding-top:20px;
+}
+.p-tb-5{
+    padding: 5px 0px;
+}
+.p-tb-10{
+    padding: 10px 0px;
+}
+.p-tb-20{
+    padding: 20px 0px;
+}
+.p-tb-30{
+    padding: 30px 0px;
+}
+.p-tb-40{
+    padding: 40px 0px;
+}
+
+
+.f-weight-500{
+    font-weight: 500;
+}
+
+
+

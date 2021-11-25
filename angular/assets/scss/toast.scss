@@ -1,0 +1,43 @@
+.toast {
+  display: inline-block;
+  padding: 8px 16px !important;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  pointer-events: all;
+  color: rgba(0,0,0,0.65);
+  display: flex !important;
+  align-items: center;
+  min-height: 0 !important;
+  p {
+    margin: 0;
+    font-size: 15px;
+    span {
+      vertical-align: middle;
+        .success {
+          color: green;
+          font-size: 20px;
+          margin-right: 8px;   
+          vertical-align: middle;     
+        }
+        .error {
+          color: #F5222D;
+          font-size: 20px;
+          margin-right: 8px;  
+          vertical-align: middle;        
+        }
+        .warning {
+          color: #faad14;
+          font-size: 20px;
+          margin-right: 8px;   
+          vertical-align: middle;       
+        }
+        .info {
+          color: #1890ff;
+          font-size: 20px;
+          margin-right: 8px;     
+          vertical-align: middle;     
+        }
+      }
+    }
+  }
