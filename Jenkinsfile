@@ -7,7 +7,7 @@ agent {
  }
  
   environment {
-	    REPOSITORY_URL = '494989341217.dkr.ecr.us-east-2.amazonaws.com/ecsrepo'
+	REPOSITORY_URL = '494989341217.dkr.ecr.us-east-2.amazonaws.com/ecsrepo'
         TASK_DEFINITION_NAME = 'lerni'
         CLUSTER_NAME = 'mycluster'
         SERVICE_NAME = 'myecsservice'
@@ -23,9 +23,12 @@ agent {
               sh '''
               sudo yum install epel-release -y
               sudo yum install jq -y
-	          aws --version
-	          
-	          '''
+	      sudo yum install unzip -y
+	      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+              unzip awscliv2.zip
+              sudo ./aws/install
+	      aws --version
+	      '''
 	      }
 
 	   }
@@ -40,9 +43,9 @@ stage('build') {
             steps {
                 
                 withAWS(credentials: 'AWS CREDS', region: 'us-east-2') {
-			    sh '''
-			    
-			    echo "Building image..."
+	        sh '''
+		aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 494989341217.dkr.ecr.us-east-2.amazonaws.com
+		echo "Building image..."
                 docker build -t $REPOSITORY_URL:latest .
                 echo "Tagging image..."
                 docker tag $REPOSITORY_URL:latest $REPOSITORY_URL:v1
