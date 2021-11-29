@@ -44,7 +44,7 @@ stage('build') {
                 
                 withAWS(credentials: 'AWS CREDS', region: 'us-east-2') {
 	        sh '''
-		aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 494989341217.dkr.ecr.us-east-2.amazonaws.com
+		docker login --username AWS -p $(aws ecr get-login-password --region us-east-2) 494989341217.dkr.ecr.us-east-2.amazonaws.com
 		echo "Building image..."
                 docker build -t $REPOSITORY_URL:latest .
                 echo "Tagging image..."
