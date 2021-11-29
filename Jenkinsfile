@@ -2,7 +2,7 @@ pipeline{
 agent {
     node {
         label 'node1'
-        customWorkspace '/home/centos/slave'
+        customWorkspace '/home/ec2-user/slave'
     }
  }
  
