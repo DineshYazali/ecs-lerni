@@ -48,10 +48,10 @@ stage('build') {
 		echo "Building image..."
                 docker build -t $REPOSITORY_URL:latest .
                 echo "Tagging image..."
-                docker tag $REPOSITORY_URL:latest $REPOSITORY_URL:v1
+                docker tag $REPOSITORY_URL:latest $REPOSITORY_URL:v4
                 echo "Pushing image..."
                 docker push $REPOSITORY_URL:latest
-                docker push $REPOSITORY_URL:v1
+                docker push $REPOSITORY_URL:v4
                 
                 '''
             }
